@@ -3,9 +3,11 @@
 # Author: Jan Weber
 # Description: Skript pro smazání uživatelů v testovacím prostředí systému Linux
 # License: GNU/GPL verze 3
-# Usage: sudo ./smazat-uzivatele.sh <user user2 user3>
+# Usage: smazat-uzivatele.sh <user user2 user3 *>
+# Parametrs: <user user2 user3 *> - jména nebo části jmen uživatelů, které chceme smazat
 # Example: sudo ./smazat-uzivatele.sh hon lucie ond pav emi
-# Description: Skript nabidne smazan uzivatelu zacinajici na hon, lucie, ond, pav a emi
+
+
 
 # pokud nejsou zadany zadne parametry, tak vypiseme napovedu a ukoncime skript
 if [[ $# -eq 0 ]]; then
