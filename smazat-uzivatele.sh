@@ -74,7 +74,7 @@ if [[ ! -s $tmpfile ]]; then
 fi
 
 # projdeme uzivatele, ktere chceme smazat
-for uzivatelJmeno in $(cat $tmpfile); do
+for uzivatelJmeno in $(< $tmpfile); do
 	echo "Opravdu smazat uživatele $uzivatelJmeno vč. jeho domovské složky?";
 	
 	# zeptame se uzivatele, jestli chce smazat uzivatele
